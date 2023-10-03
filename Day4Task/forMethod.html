@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Sample JSON object
+const jsonData = {
+  name: "Murali",
+  age: 27,
+  city: "chennai",
+  hobbies: ["Reading", "Driving", "CreateWeb"],
+};
+
+// Using a for loop
+console.log("Using a for loop:");
+for (let key in jsonData) {
+  console.log(`${key}: ${jsonData[key]}`);
+  //or
+  //console.log(key+":"+jsonData[key]);
+}
+
+// Using a for...in loop
+console.log("\nUsing a for...in loop:");
+for (let key in jsonData) {
+  if (jsonData.hasOwnProperty(key)) {
+    console.log(`${key}: ${jsonData[key]}`);
+    //or
+    //console.log(key+":"+jsonData[key]);
+  }
+}
+
+// Using a for...of loop (only works with iterable values)
+console.log("\nUsing a for...of loop (for arrays):");
+for (let value of jsonData.hobbies) {
+  console.log(value);
+}
+
+// Using forEach (for arrays)
+console.log("\nUsing forEach (for arrays):");
+jsonData.hobbies.forEach((value) => {
+  console.log(value);
+});
+    </script>
+</body>
+</html>

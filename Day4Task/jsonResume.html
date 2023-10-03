@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+   // This JSON data represents a fictional resume for "Murali." 
+
+const resumeData = {
+  "name": "Murali",
+  "contact": {
+    "address": "1/139 Atrankarai Street, Mudikandanallur post, Mayiladuthurai talk,tamilnadu-609202",
+    "phone": "7010777680",
+    "email": "muralibalan66@gmail.com",
+    "website": "www.muralibalan.com"
+  },
+  "summary": "Experienced software engineer with a passion for creating efficient and scalable web applications. Strong problem-solving skills and a deep understanding of front-end and back-end technologies.",
+  "education": [
+    {
+      "degree": "Bachelor of  Computer Application",
+      "school": "Bharadhidasan University",
+      "year": 2016
+    },
+    {
+      "degree": "Master of Science in Computer Science",
+      "school": "Bharadhidasan University",
+      "year": 2018
+    }
+  ],
+ 
+  "skills": [
+    "C",
+    "Java",
+    "SQL",
+    "JDBC",
+    "JavaScript",
+    "React",
+    "Node.js",
+    "HTML/CSS",
+  ]
+};
+//console.log(JSON.stringify(resumeData, null, 2));
+let skill=resumeData.skills;
+console.log("Name (using dot notation):", skill);
+
+const summary = resumeData["summary"];
+console.log("Resume summary (using square bracket notation):", summary);
+
+
+  </script>
+</body>
+</html>
